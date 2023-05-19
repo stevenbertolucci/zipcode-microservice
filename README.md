@@ -10,7 +10,7 @@ This microservice app looks up the city of the user and it returns a JSON object
 ## How to REQUEST Data
 To request data, call `http://localhost:4500/zipcode` using the GET method.  
 
-Parameters are not needed as the zipcode microserivce automatically take in the user's longitude and latitude and then respond with information of the user's city and zip code . However, VPN should NOT be used as it can hide the longitude and latitude. Users must allow location for the microservice to work. 
+Parameters are not needed as the zipcode microserivce automatically take in the user's longitude and latitude and then respond with information of the user's city and zip code . However, VPN should NOT be used as it can hide the longitude and latitude. Users must allow location on their browser for the microservice to work. 
 
 
 An example code in JavaScript to fetch data from my zip code microservice is: 
