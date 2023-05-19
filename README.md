@@ -54,4 +54,5 @@ geolocation of that user in JSON.
 }
 ```
 ## UML Diagram
-![UML Diagram](https://user-images.githubusercontent.com/13703308/236877383-c2a2fdf7-7b51-4d1d-b9f6-94c472b8c0c0.png)
+![Updated - UML Diagram - CS361](https://github.com/stevenbertolucci/zipcode-microservice/assets/13703308/2fa59e36-62a4-4bbb-ad7d-d3124c135453)
+
