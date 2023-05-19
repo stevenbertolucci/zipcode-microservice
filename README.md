@@ -16,6 +16,10 @@ Parameters are not needed as the zipcode microserivce automatically take in the 
 When your application calls my UI using the GET method through `http://localhost:4500/zipcode`, my microservice server will take in the longitude and latitude of the user and it will send you the data of the current 
 geolocation of that user in JSON. 
 
+
+
+
+
 # Section 2: Example code and successful response 
 ## Example JavaScript Code to call my Zip Code microservice
 ```JS
