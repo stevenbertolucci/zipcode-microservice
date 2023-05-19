@@ -3,6 +3,7 @@
 Runs the app in the development mode.\
 Open [http://localhost:4500/zipcode](http://localhost:4500/zipcode) to view it in your browser.
 
+# Section 1: How to request/receive data to/from Zip Code Microservice
 ## What this App Does
 
 This microservice app looks up the city of the user and it returns a JSON object of the user's location.
@@ -16,7 +17,8 @@ Parameters are not needed as the zipcode microserivce automatically take in the 
 When your application calls my UI using the GET method through `http://localhost:4500/zipcode`, my microservice server will take in the longitude and latitude of the user and it will send you the data of the current 
 geolocation of that user in JSON. 
 
-# Example JavaScript Code to call my Zip Code microservice
+# Section 2: Example code and successful response 
+## Example JavaScript Code to call my Zip Code microservice
 An example code in JavaScript to fetch data from my zip code microservice is: 
 ```JS
     const handleZip = async (event) => {
@@ -28,7 +30,7 @@ An example code in JavaScript to fetch data from my zip code microservice is:
         console.log(data);
     }
 ```
-# Example of a successful response will look like this: 
+## Example of a successful response will look like this: 
 ```JS
 {
   "latitude": 32.81999969482422,
