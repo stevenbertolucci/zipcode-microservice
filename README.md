@@ -15,7 +15,6 @@ Parameters are not needed as the zipcode microserivce automatically take in the 
 
 An example code in JavaScript to fetch data from my zip code microservice is: 
 ```JS
-// Call microservice without clicking button
     const handleZip = async (event) => {
         
         const URL = 'http://localhost:4500/zipcode'
