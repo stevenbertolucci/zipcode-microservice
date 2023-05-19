@@ -14,7 +14,7 @@ Parameters are not needed as the zipcode microserivce automatically take in the 
 
 ## How to RECEIVE Data
 When your application calls my UI using the GET method through `http://localhost:4500/zipcode`, my microservice server will take in the longitude and latitude of the user and it will send you the data of the current 
-geolocation of that user in JSON. 
+geolocation of that user in JSON. You can then take the response and append it to your application. 
 
 ## UML Diagram
 ![Updated - UML Diagram - CS361](https://github.com/stevenbertolucci/zipcode-microservice/assets/13703308/2fa59e36-62a4-4bbb-ad7d-d3124c135453)
