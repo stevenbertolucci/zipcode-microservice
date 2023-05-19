@@ -19,7 +19,6 @@ geolocation of that user in JSON.
 
 # Section 2: Example code and successful response 
 ## Example JavaScript Code to call my Zip Code microservice
-An example code in JavaScript to fetch data from my zip code microservice is: 
 ```JS
     const handleZip = async (event) => {
         
