@@ -1,42 +1,19 @@
 # Zip Code Lookup
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
 Runs the app in the development mode.\
-Open [http://localhost:4500](http://localhost:4500) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm install cors`
-
-Needed for to make calls to microservice without clicking button
-
-### `npm install express`
-
-### `npm install dotenv`
-
-### `npm install express-async-handler`
-
-### `npm install nodemon`
-
-### `npm install node-fetch`
+Open [http://localhost:4500/zipcode](http://localhost:4500/zipcode) to view it in your browser.
 
 ## What this App Does
 
 This microservice app looks up the city of the user and it returns a JSON object of the user's location.
 
 ## How to REQUEST Data
-Requesting data is very simple by using the fetch method to request data from the backend server, which is from Big Data Cloud API. In order
-to have this working, you need to install cors to make calls to my Zip code server. 
+To request data, call `http://localhost:4500/zipcode` using the GET method.  
 
-The URL that I used is: `https://api.bigdatacloud.net/data/reverse-geocode-client?city={query}&localityLanguage=en`
+Parameters are not needed as the zipcode microserivce automatically take in the user's longitude and latitude and then respond with information of the user's city and zip code . However, VPN should NOT be used as it can hide the longitude and latitude. Users must allow location for the microservice to work. 
 
-The code to fetch data from Big Data Cloud API is: 
+
+An example code in JavaScript to fetch data from my zip code microservice is: 
 ```JS
 // Call microservice without clicking button
     const handleZip = async (event) => {
@@ -49,26 +26,10 @@ The code to fetch data from Big Data Cloud API is:
     }
 ```
 
-In order for the code above to work, you need to add this code to the server file to make calls:
-```JS
-import cors from "cors";
-app.use(cors());
-..
-..
-..
-```
 ## How to RECEIVE Data
-When your application calls my UI on port 4500, my UI will take in the location of the user and it will send you the data of the current 
+When your application calls my UI using the GET method through `http://localhost:4500/zipcode`, my microservice server will take in the longitude and latitude of the user and it will send you the data of the current 
 geolocation of that user.
-```JS   
-    const handleZip = async (event) => {
-        ...
-        ...
-        ...
-        const data = await result.json();
-        ...
-    }
-```
+
 # Successful Response will look like this: 
 ```JS
 {
