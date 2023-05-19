@@ -28,7 +28,7 @@ An example code in JavaScript to fetch data from my zip code microservice is:
 
 ## How to RECEIVE Data
 When your application calls my UI using the GET method through `http://localhost:4500/zipcode`, my microservice server will take in the longitude and latitude of the user and it will send you the data of the current 
-geolocation of that user.
+geolocation of that user in JSON. 
 
 # Successful Response will look like this: 
 ```JS
