@@ -13,7 +13,7 @@ To request data, call `http://localhost:4500/zipcode` using the GET method.
 Parameters are not needed as the zipcode microserivce automatically take in the user's longitude and latitude and then respond with information of the user's city and zip code . However, VPN should NOT be used as it can hide the longitude and latitude. Users must allow location on their browser for the microservice to work. 
 
 ## How to RECEIVE Data
-When your application calls my UI using the GET method through `http://localhost:4500/zipcode`, my microservice program will take in the longitude and latitude of the user and it will send you the data of the current 
+When your application calls my UI using the GET method through `http://localhost:4500/zipcode`, my microservice program will automatically take in the longitude and latitude of the user and it will send you the data of the current 
 geolocation of that user in JSON. You can then take the response and append it to your application. The response will be visible in your browser's developer tool or your IDE terminal.  
 
 ## UML Diagram
