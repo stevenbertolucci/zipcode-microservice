@@ -1,6 +1,6 @@
 # Zip Code Lookup
 
-Open [http://localhost:4500/zipcode](http://localhost:4500/zipcode) to view the JSON response it in your browser.
+Open [http://localhost:4500/zipcode](http://localhost:4500/zipcode) to view the JSON response in your browser.
 
 # Section 1: How to request/receive data to/from Zip Code Microservice
 ## What this App Does
